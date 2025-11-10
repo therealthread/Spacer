@@ -30,7 +30,7 @@ public class SpacerExpansion extends PlaceholderExpansion {
 
     @Override
     public @NotNull String getIdentifier() {
-        return "spacer"; //
+        return "spacer";
     }
 
     @Override
@@ -46,13 +46,16 @@ public class SpacerExpansion extends PlaceholderExpansion {
         if (split.length != 2) return "";
 
         try {
+        
             int amount = Integer.parseInt(split[0]);
             Spacer.SpaceType type = Spacer.SpaceType.valueOf(split[1].toUpperCase());
 
             return Spacer.getSpace(amount, type);
+            
         } catch (Exception e) {
             return "";
         }
+        
     }
 }
 ```
