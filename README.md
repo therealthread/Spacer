@@ -1,7 +1,6 @@
 # Spacer
 Create negative and positive spaces for Minecraft resource packs
 
-## Example
 ```java
 String a Spacer.getSpace(16, Spacer.SpaceType.POSITIVE);
 String b Spacer.getSpace(128, Spacer.SpaceType.NEGATIVE);
